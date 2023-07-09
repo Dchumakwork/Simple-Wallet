@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Walllet</title>
+    <link href="Walllet.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Images/icon.ico"></link>
+    <script src="Wallet.js" type="module"></script>
+</head>
+<header class="grid">
+    <div class="headLogo"></div>
+    <div class="headMain">
+        <div></div>
+        <div></div>
+        <div>   
+            <div id="hid">Приховати дані:</div>
+            <div>
+            <select id="hiddOptions">
+                <option>Нічого</option>
+                <option>Ліва частина</option>
+                <option>Права частина</option>
+                <option>Все</option>
+            </select>  
+            </div>  
+        </div>
+    </div>
+    <div class="headLang">
+        <table align="center" border="1" cellpadding="5" cellspacing="1" style="height: 30px; width: 150px;">
+        <tbody>
+            <tr>
+                <td id="langUA">УКР</td>
+                <td id="langEN">ENG</td>
+                <td id="langRU">РУС</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</header>
+<body>
+    <div class="left">
+        <div align="left">
+            <form id="startForm">
+            <h2>Стартовий капітал :)</h2> 
+            <input type="number" name="start" placeholder="Введіть стартову суму">
+            <input type="submit" name="conf" value="Підтвердити"> <br><br>
+            </form>
+        </div>
+        <div class="left1">
+            <div><p id="pIncome" align="center">Надходження</p>
+                <button id="income" type="button" >Додати надходження</button>
+            <p id="lastIncomes">Останні надходження:</p>
+            <p align="center">
+                <ul id="incomes" style="color: green;">
+                </ul>
+            </p>
+            </div>
+            <h4 id="incAmnt">Сума надходжень:</h4>
+        </div>
+        <div class="right1">       
+            <div><p id="pOutcome" align="center">Витрати</p>
+                <button id="outcome" type="button">Додати витрату</button>
+            <p id="lastOutcomes">Останні витрати:</p>
+            <p align="center">
+                <ul id="outcomes" style="color: red;">                    
+                </ul>
+            </p>
+            </div>
+            <h4 id="outAmnt">Сума витрат:</h4>
+        </div> 
+    </div>
+    <div class="right">
+        <h2>Поточний стан гаманця</h2>
+        <input type="text" id="currBal" readonly value="0">
+        <p id="lastTransactions">Попередні операції</p>
+        <p align="center">
+            <ul id="transactions" style="font-weight: bold;">           
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

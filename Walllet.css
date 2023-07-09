@@ -1,0 +1,100 @@
+.grid {
+    display: grid;
+    /* column-gap: 1px; */
+    height: 35px;
+    background-color: rgb(170, 155, 136);
+    grid-template-columns: 70px 1fr 160px;
+}
+.headLogo {
+    background-image: url('Images/LogoSmall.jpg');
+}
+.headMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 130px;
+    background-image: linear-gradient(
+        to right,
+        rgba(108, 214, 233, 0.5),
+        rgba(228, 77, 77, 0.5))
+    
+}
+#hidding {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.headLang {
+    background-color: rgb(240, 85, 85);
+}
+#langUA:hover {
+    background-image: url(Images/ua.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#langEN:hover {
+    background-image: url(Images/usa.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    color: rgb(47, 48, 3);
+    cursor: pointer;
+}
+#langRU:hover {
+    background-image: url(Images/ru.jpg);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    color: rgb(47, 48, 3);
+    cursor: pointer;
+}
+.left { 
+    width: 47%; 
+    height: 500px;
+    background: #8aafc0;
+    margin-top: 1%;
+    padding: 2px 1%;
+    border: solid 1px black; 
+    float: left;
+}
+.right { 
+    width: 47%;
+    height: 500px;
+    background: #c288b8;
+    margin-top: 1%;
+    padding: 2px 1%; 
+    border: solid 1px black; 
+    float: right; 
+}
+.left1 {
+    width: 40%;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 300px 50px;
+    padding: 3px 15px; 
+    border: solid 1px black; 
+    float: left;
+}
+.right1 {
+    width: 40%;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 300px 50px;
+    padding: 3px 15px; 
+    border: solid 1px black; 
+    float: right; 
+}
+.output1 {
+    width: 90%;
+    height: 200px;
+    background: #6bb89a;
+}
+#currBal {
+    font-weight: bold;
+    font-size: large;
+    width: 150px;
+}
+/* тимчасові класи */
+.hidden {
+    display: none;
+}
