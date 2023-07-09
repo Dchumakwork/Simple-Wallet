@@ -16,7 +16,7 @@ const langRu = document.getElementById('langRU');
 
 // слухачі ---
 hiddOptions.addEventListener('change', hideBlock);
-startForm.addEventListener('click', aprooveAmt) ;
+startForm.addEventListener('submit', aprooveAmt) ;
 incomeBtn.addEventListener('click', addIncome);
 outcomeBtn.addEventListener('click', addOutcome);
 langRu.addEventListener('click', shitLang);
