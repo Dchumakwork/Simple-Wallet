@@ -10,7 +10,7 @@
 }
 .headMain {
     display: grid;
-    grid-template-columns: 1fr 1fr 130px;
+    grid-template-columns: 1fr 200px 130px;
     background-image: linear-gradient(
         to right,
         rgba(108, 214, 233, 0.5),

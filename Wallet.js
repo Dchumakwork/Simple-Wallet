@@ -35,6 +35,7 @@ let currLanguage = 1;
 // функції ---
 function aprooveAmt(event) {
     event.preventDefault();
+    document.querySelector('[name="conf"]').disabled = true;
     currBal = startAmountInp.value;
     currBalanceInput.value = currBal;
     startAmountInp.setAttribute('readonly', 'true');
@@ -142,6 +143,8 @@ function changeLangToEN () {
         hiddOptions.options[2].textContent = 'Right part';
         hiddOptions.options[3].textContent = 'Both';
         document.getElementById('pIncome').textContent = 'Incomes';
+        document.getElementById('spec').textContent = 'Product specifications (UA)';
+        document.getElementById('UPD').textContent = 'Updates and changes (UA)';
         incomeBtn.textContent = 'Add income';
         document.getElementById('lastIncomes').textContent = 'Last incomes:';
         incomeAmount.textContent = `Incomes amount: ${incomeAmnt}`;
@@ -165,6 +168,8 @@ function changeLangToUA () {
         hiddOptions.options[2].textContent = 'Права частина';
         hiddOptions.options[3].textContent = 'Все';
         document.getElementById('pIncome').textContent = 'Надходення';
+        document.getElementById('spec').textContent = 'Специфікація продукту';
+        document.getElementById('UPD').textContent = 'Список змін та оновлень';
         incomeBtn.textContent = 'Додати надходження';
         document.getElementById('lastIncomes').textContent = 'Останні надходження:';
         incomeAmount.textContent = `Сума надходжень: ${incomeAmnt}`;
